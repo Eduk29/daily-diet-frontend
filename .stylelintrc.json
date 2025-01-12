@@ -1,0 +1,8 @@
+{
+  "plugins": ["stylelint-scss"],
+  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+  "rules": {
+    "no-empty-source": null,
+    "scss/no-global-function-names": null
+  }
+}
