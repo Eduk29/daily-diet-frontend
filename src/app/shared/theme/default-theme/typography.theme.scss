@@ -1,0 +1,60 @@
+@use './typography-mixins.theme' as typography-mixins;
+
+.typography h1,
+.typography .theme-h1 {
+  @include typography-mixins.h1-mixin;
+}
+
+.typography h2,
+.typography .theme-h2 {
+  @include typography-mixins.h2-mixin;
+}
+
+.typography h3,
+.typography .theme-h3 {
+  @include typography-mixins.h3-mixin;
+}
+
+.typography h4,
+.typography .theme-h4 {
+  @include typography-mixins.h4-mixin;
+}
+
+.typography h5,
+.typography .theme-h5 {
+  @include typography-mixins.h5-mixin;
+}
+
+.typography h6,
+.typography .theme-h6 {
+  @include typography-mixins.h6-mixin;
+}
+
+.typography .theme-body {
+  @include typography-mixins.body-mixin;
+}
+
+.typography .theme-body-bold {
+  @include typography-mixins.body-bold-mixin;
+}
+
+.typography .theme-body-2 {
+  @include typography-mixins.body-2-mixin;
+}
+
+.typography .theme-body-2-bold {
+  @include typography-mixins.body-2-bold-mixin;
+}
+
+.typography .theme-button {
+  @include typography-mixins.button-mixin;
+}
+
+.typography .theme-caption {
+  @include typography-mixins.caption-mixin;
+}
+
+.typography a,
+.typography .theme-link {
+  @include typography-mixins.link-mixin;
+}

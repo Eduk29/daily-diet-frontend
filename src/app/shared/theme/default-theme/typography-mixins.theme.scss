@@ -1,0 +1,132 @@
+@mixin font-weight-regular-mixin {
+  font-weight: 400;
+}
+
+@mixin font-weight-medium-mixin {
+  font-weight: 500;
+}
+
+@mixin font-weight-bold-mixin {
+  font-weight: 700;
+}
+
+@mixin font-family-mixin {
+  font-family: Roboto, sans-serif;
+}
+
+@mixin h1-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 48px;
+  line-height: 105%;
+}
+
+@mixin h2-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 40px;
+  line-height: 105%;
+}
+
+@mixin h3-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 32px;
+  line-height: 105%;
+}
+
+@mixin h4-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 24px;
+  line-height: 105%;
+}
+
+@mixin h5-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 18px;
+  line-height: 105%;
+}
+
+@mixin h6-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 105%;
+}
+
+@mixin body-mixin {
+  @include font-family-mixin;
+  @include font-weight-regular-mixin;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 105%;
+}
+
+@mixin body-bold-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 105%;
+}
+
+@mixin body-2-mixin {
+  @include font-family-mixin;
+  @include font-weight-regular-mixin;
+
+  font-style: normal;
+  font-size: 12px;
+  line-height: 105%;
+}
+
+@mixin body-2-bold-mixin {
+  @include font-family-mixin;
+  @include font-weight-bold-mixin;
+
+  font-style: normal;
+  font-size: 12px;
+  line-height: 105%;
+}
+
+@mixin button-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin caption-mixin {
+  @include font-family-mixin;
+  @include font-weight-regular-mixin;
+
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@mixin link-mixin {
+  @include font-family-mixin;
+  @include font-weight-medium-mixin;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
