@@ -1,0 +1,17 @@
+@use './../../theme/default-theme/colors.theme.scss' as theme;
+
+.navbar {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  .navbar-brand {
+    padding-right: 2rem;
+  }
+
+  &-background {
+    background-color: theme.$color-primary;
+    color: theme.$color-black;
+  }
+}
