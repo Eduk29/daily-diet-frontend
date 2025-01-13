@@ -1,0 +1,15 @@
+<button [tabIndex]="0" class="user-avatar" (click)="toggleUserMenu($event)">
+  <img src="user-avatar.svg" alt="user-avatar" class="user-avatar-img" />
+  <i class="fa-solid fa-chevron-down ml-3"></i>
+</button>
+
+@if (isMenuOpen) {
+  <ul class="avatar-menu">
+    <li [tabIndex]="1" (click)="redirectToProfile()" (keypress)="redirectToProfile()" role="presentation">
+      <p class="m-0 theme-body">Perfil</p>
+    </li>
+    <li [tabIndex]="2" (click)="logout()" (keypress)="logout()" role="presentation">
+      <p class="m-0 theme-body">Sair</p>
+    </li>
+  </ul>
+}
