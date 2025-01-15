@@ -79,7 +79,7 @@
 
 @mixin body-bold-mixin {
   @include font-family-mixin;
-  @include font-weight-medium-mixin;
+  @include font-weight-bold-mixin;
 
   font-style: normal;
   font-size: 14px;
