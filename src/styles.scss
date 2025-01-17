@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @forward "./app/shared/theme/default-base.theme";
+@use "./app/shared/theme/default-theme/colors.theme" as theme;
 
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: theme.$color-white;
 }
