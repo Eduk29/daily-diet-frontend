@@ -1,0 +1,33 @@
+@use "./../../theme/default-theme/colors.theme" as theme;
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  max-width: 90%;
+  padding: 4rem 2rem;
+
+  #card-header:empty {
+    display: none;
+  }
+
+  #card-content:empty {
+    display: none;
+  }
+
+  #card-footer:empty {
+    display: none;
+  }
+
+  &.default {
+    background-color: theme.$color-grayscale-2;
+  }
+
+  &.success {
+    background-color: theme.$color-success-light;
+  }
+
+  &.error {
+    background-color: theme.$color-error-light;
+  }
+}
