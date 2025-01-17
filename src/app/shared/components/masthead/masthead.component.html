@@ -1,0 +1,13 @@
+<div [class]="class">
+  <button [class]="iconClass" (click)="back()">
+    <i class="fa-solid fa-arrow-left"></i>
+  </button>
+  <div class="masthead-content">
+    @if (title) {
+      <h3 class="m-0">{{ title }}</h3>
+    }
+    @if (subtitle) {
+      <p class="m-0">{{ subtitle }}</p>
+    }
+  </div>
+</div>

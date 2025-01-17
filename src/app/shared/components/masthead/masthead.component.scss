@@ -1,0 +1,46 @@
+@use "./../../theme//default-theme/colors.theme" as theme;
+
+.masthead {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem 2rem;
+
+  .masthead-back-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 1%;
+
+    &.default {
+      color: theme.$color-grayscale-2;
+    }
+
+    &.success {
+      color: theme.$color-success-dark;
+    }
+
+    &.error {
+      color: theme.$color-error-dark;
+    }
+  }
+
+  .masthead-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &.default {
+    background-color: theme.$color-grayscale-2;
+  }
+
+  &.success {
+    background-color: theme.$color-success-light;
+  }
+
+  &.error {
+    background-color: theme.$color-error-light;
+  }
+}
