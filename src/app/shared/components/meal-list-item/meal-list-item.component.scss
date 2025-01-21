@@ -1,0 +1,16 @@
+@use './../../theme/default-theme/colors.theme.scss' as theme;
+
+.meal-item {
+  border: 1px solid theme.$color-grayscale-3;
+  border-radius: 5px;
+
+  .fa-circle {
+    &.success {
+      color: theme.$color-success;
+    }
+
+    &.error {
+      color: theme.$color-error;
+    }
+  }
+}

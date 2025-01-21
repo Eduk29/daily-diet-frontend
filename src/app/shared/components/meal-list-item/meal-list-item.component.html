@@ -1,0 +1,10 @@
+<div class="meal-item d-flex flex-row justify-content-between px-3 py-5 mx-4" [class]="customClass">
+  <div class="d-flex flex-row">
+    <div class="pr-3">{{ meal.date | date: 'hh:mm' }}</div>
+    <div>|</div>
+    <div class="pl-3">
+      {{ meal.name }}
+    </div>
+  </div>
+  <i class="fa-solid fa-circle" [class]="iconColor"></i>
+</div>
