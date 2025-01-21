@@ -1,0 +1,10 @@
+@for (date of dates; track date) {
+  <div class="py-3">
+    <h5 class="m-0">{{ date | date: 'dd.MM.YYYY' }}</h5>
+    <div [class]="customClass">
+      @for (meal of groupedMeals[date]; track meal) {
+        <app-meal-list-item [meal]="meal"></app-meal-list-item>
+      }
+    </div>
+  </div>
+}
