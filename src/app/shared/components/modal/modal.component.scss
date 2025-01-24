@@ -1,0 +1,37 @@
+@use './../../theme/default-theme/colors.theme.scss' as theme;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 50%);
+  z-index: 1000;
+
+  .modal-content {
+    background: theme.$color-white;
+    border-radius: 8px;
+    padding: 20px 30px;
+    padding-bottom: 50px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 10%);
+    position: relative;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .close-btn:focus {
+    border-radius: 20px;
+    outline: 2px solid theme.$color-black;
+  }
+
+}

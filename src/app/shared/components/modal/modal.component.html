@@ -1,0 +1,19 @@
+@if (isOpen$ | async) {
+  <div
+    aria-hidden="true"
+    class="modal d-flex flex-row align-items-center justify-content-center vh-100 vw-100"
+    tabindex="-1"
+    (click)="onBackdropClick($event)"
+    (keyup.enter)="onBackdropClick($event)">
+    <div
+      class="modal-content"
+      #modalContent
+      role="dialog"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-description"
+      tabindex="0">
+      <button class="close-btn" (click)="closeModal()" (keyup.enter)="closeModal()" aria-label="Fechar modal">X</button>
+      <ng-content></ng-content>
+    </div>
+  </div>
+}
