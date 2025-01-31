@@ -1,66 +1,11 @@
-@use "./../../theme/default-theme/colors.theme.scss" as theme;
+@use "./styles/button-stroked.styles";
+@use "./styles/button-basic.styles";
+@use "./styles/button-fab.styles";
 
 .btn {
   align-items: center;
-  border-radius: 0.5rem;
   cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  &.btn-basic {
-    &.default {
-      background-color: theme.$color-grayscale-6;
-      border: none;
-      color: theme.$color-white;
-    }
-
-    &.success {
-      background-color: theme.$color-success-dark;
-      border: none;
-      color: theme.$color-white;
-    }
-
-    &.error {
-      background-color: theme.$color-error-dark;
-      border: none;
-      color: theme.$color-white;
-    }
-  }
-
-  &.btn-stroked {
-    &.default {
-      background-color: theme.$color-white;
-      border: 1px solid theme.$color-grayscale-6;
-      color: theme.$color-grayscale-6;
-    }
-
-    &.success {
-      background-color: theme.$color-success-light;
-      border: none;
-      color: theme.$color-black;
-
-      .success-icon {
-        color: theme.$color-success-dark;
-      }
-
-      &.selected {
-        border: 1px solid theme.$color-success-dark;
-      }
-    }
-
-    &.error {
-      background-color: theme.$color-error-light;
-      border: none;
-      color: theme.$color-black;
-
-      .error-icon {
-        color: theme.$color-error-dark;
-      }
-
-      &.selected {
-        border: 1px solid theme.$color-error-dark;
-      }
-    }
-  }
 }

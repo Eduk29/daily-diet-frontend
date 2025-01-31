@@ -1,0 +1,23 @@
+@use './../../../theme/default-theme/colors.theme.scss' as theme;
+
+.btn-fab {
+  border-radius: 2rem;
+
+  &.default {
+    background-color: theme.$color-grayscale-3;
+    border: 1px solid theme.$color-grayscale-4;
+    color: theme.$color-grayscale-6;
+  }
+
+  &.success {
+    background-color: theme.$color-success-dark;
+    border: 1px solid theme.$color-grayscale-4;
+    color: theme.$color-success;
+  }
+
+  &.error {
+    background-color: theme.$color-error-dark;
+    border: 1px solid theme.$color-grayscale-4;
+    color: theme.$color-error;
+  }
+}
