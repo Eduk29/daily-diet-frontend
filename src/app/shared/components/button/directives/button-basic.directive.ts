@@ -2,6 +2,7 @@ import { AfterViewChecked, Directive, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[ButtonBasic]',
+  standalone: true,
 })
 export class ButtonBasicDirective implements AfterViewChecked {
   constructor(private eleRef: ElementRef) {}

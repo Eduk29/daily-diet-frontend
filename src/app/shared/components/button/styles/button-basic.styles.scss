@@ -1,0 +1,23 @@
+@use './../../../theme/default-theme/colors.theme.scss' as theme;
+
+.btn-basic {
+  border-radius: 0.5rem;
+
+  &.default {
+    background-color: theme.$color-grayscale-6;
+    border: none;
+    color: theme.$color-white;
+  }
+
+  &.success {
+    background-color: theme.$color-success-dark;
+    border: none;
+    color: theme.$color-white;
+  }
+
+  &.error {
+    background-color: theme.$color-error-dark;
+    border: none;
+    color: theme.$color-white;
+  }
+}

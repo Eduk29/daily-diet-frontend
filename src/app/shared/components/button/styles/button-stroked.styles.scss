@@ -1,0 +1,39 @@
+@use './../../../theme/default-theme/colors.theme.scss' as theme;
+
+.btn-stroked {
+  border-radius: 0.5rem;
+
+  &.default {
+    background-color: theme.$color-white;
+    border: 1px solid theme.$color-grayscale-6;
+    color: theme.$color-grayscale-6;
+  }
+
+  &.success {
+    background-color: theme.$color-success-light;
+    border: none;
+    color: theme.$color-black;
+
+    .success-icon-color {
+      color: theme.$color-success-dark;
+    }
+
+    &.selected {
+      border: 1px solid theme.$color-success-dark;
+    }
+  }
+
+  &.error {
+    background-color: theme.$color-error-light;
+    border: none;
+    color: theme.$color-black;
+
+    .error-icon-color {
+      color: theme.$color-error-dark;
+    }
+
+    &.selected {
+      border: 1px solid theme.$color-error-dark;
+    }
+  }
+}

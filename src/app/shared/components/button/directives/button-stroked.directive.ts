@@ -2,6 +2,7 @@ import { AfterViewChecked, Directive, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[ButtonStroked]',
+  standalone: true,
 })
 export class ButtonStrokedDirective implements AfterViewChecked {
   constructor(private eleRef: ElementRef) {}

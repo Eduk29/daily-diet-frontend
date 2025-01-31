@@ -1,6 +1,6 @@
 <button [class]="class" [type]="type" (click)="clickEvent()">
   @if (iconName) {
-    <i [class]="iconName + ' ' + iconColor + '-icon'"></i>
+    <i [class]="iconName + ' ' + iconColor + '-icon-color'"></i>
   }
-  <p class="m-0 pl-2 theme-body-bold">{{ label }}</p>
+  <p [class.pl-2]="!!iconName" class="m-0 theme-body-bold">{{ label }}</p>
 </button>
