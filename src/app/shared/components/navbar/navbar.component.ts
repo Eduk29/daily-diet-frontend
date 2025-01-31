@@ -16,6 +16,10 @@ export class NavbarComponent {
 
   constructor(private router: Router) {}
 
+  public get isCreateUserPage(): boolean {
+    return this.router.url.includes('user/register');
+  }
+
   public redirectToUserCreation(): void {
     this.router.navigateByUrl('/user/register');
   }

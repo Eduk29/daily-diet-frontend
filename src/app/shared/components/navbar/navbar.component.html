@@ -4,7 +4,7 @@
   </a>
   @if (userIsLogged) {
     <app-avatar></app-avatar>
-  } @else {
+  } @else if (!userIsLogged && !isCreateUserPage) {
     <app-button ButtonFab [clickEventHandler]="redirectToUserCreation" iconName="fa-solid fa-user-plus" type="button">
     </app-button>
   }
