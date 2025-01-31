@@ -3,6 +3,23 @@
   cursor: pointer;
 }
 
+// Display
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
 // Height
 .vh-10 {
   height: 10vh;
