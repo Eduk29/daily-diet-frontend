@@ -1,0 +1,11 @@
+@if (controlName && label) {
+  <div [id]="label.toLowerCase()" [class]="'mb-2 formfield-text ' + labelPositionClass + ' ' + customClass">
+    <label [for]="labelFor" class="formfield-text-label pr-2">{{ label }}:</label>
+    <div class="formfield-text-input">
+      <input [name]="labelFor" [placeholder]="placeholder" type="text" [formControl]="controlName" />
+      @if (hint) {
+        <p class="m-0 theme-caption formfield-text-hint">{{ hint }}</p>
+      }
+    </div>
+  </div>
+}
