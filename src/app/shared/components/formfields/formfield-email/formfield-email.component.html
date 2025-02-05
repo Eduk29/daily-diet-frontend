@@ -1,0 +1,16 @@
+@if (controlName && label) {
+  <div [id]="label.toLowerCase()" [class]="'mb-2 formfield-email ' + labelPositionClass + ' ' + customClass">
+    <label [for]="labelFor" class="formfield-email-label pr-2">{{ label }}:</label>
+    <div class="formfield-email-input">
+      <input
+        [formControl]="controlName"
+        [name]="labelFor"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+        [placeholder]="placeholder"
+        type="email" />
+      @if (hint) {
+        <p class="m-0 theme-caption formfield-email-hint">{{ hint }}</p>
+      }
+    </div>
+  </div>
+}

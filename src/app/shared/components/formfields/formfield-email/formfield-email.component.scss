@@ -1,0 +1,41 @@
+.formfield-email {
+  display: flex;
+  padding: 0 1.2rem 0 0.5rem;
+
+  &.label-above {
+    flex-direction: column;
+    justify-content: center;
+
+    .formfield-email-label {
+      max-width: 100%;
+    }
+
+    .formfield-email-input {
+      max-width: 99%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  &.label-before {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .formfield-email-label {
+      max-width: 20%;
+      white-space: normal;
+      word-wrap: break-word;
+    }
+
+    .formfield-email-input {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      max-width: 100%;
+    }
+  }
+
+
+}
