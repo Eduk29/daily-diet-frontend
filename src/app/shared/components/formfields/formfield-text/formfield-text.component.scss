@@ -1,6 +1,6 @@
 .formfield-text {
   display: flex;
-  width: 100%;
+  padding: 0 1.2rem 0 0.5rem;
 
   &.label-above {
     flex-direction: column;
@@ -30,12 +30,10 @@
     }
 
     .formfield-text-input {
+      display: flex;
+      flex-direction: column;
       flex: 1;
-      max-width: 94%;
-
-      input {
-        width: 100%;
-      }
+      max-width: 100%;
     }
   }
 
