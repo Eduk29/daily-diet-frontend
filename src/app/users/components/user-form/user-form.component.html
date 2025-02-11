@@ -1,0 +1,27 @@
+<form [formGroup]="userForm" class="user-form">
+  <div class="form-header">
+    <h4 class="m-0">User Registration</h4>
+    <hr />
+  </div>
+  <div class="form-group w-100">
+    <div class="name-input">
+      <app-formfield-text label="Name" labelPosition="before" [controlName]="nameControl"></app-formfield-text>
+    </div>
+
+    <div class="email-input">
+      <app-formfield-email label="Email" labelPosition="before" [controlName]="emailControl"></app-formfield-email>
+    </div>
+  </div>
+  <div class="form-buttons">
+    <app-button
+      ButtonBasic
+      label="Register"
+      type="button"
+      customClass="px-2 py-1"
+      (clickEvent)="onSubmit()"
+      [disabled]="!formIsValid()">
+    </app-button>
+    <app-button ButtonStroked label="Clear" type="button" (clickEvent)="clearForm()" customClass="px-2 py-1 mx-2">
+    </app-button>
+  </div>
+</form>
