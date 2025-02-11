@@ -1,0 +1,13 @@
+<section class="snackbar hide" [class]="snackbarData.customClass">
+  <div class="card shadow rounded-pill">
+    <div class="d-flex flex-row align-items-center rounded-pill py-2 px-4">
+      @if (snackbarData.iconName && snackbarData.iconPosition === 'before') {
+        <i class="mr-3" [class]="snackbarData.iconName"></i>
+      }
+      <p class="m-0">{{ snackbarData.message }}</p>
+      @if (snackbarData.iconName && snackbarData.iconPosition === 'after') {
+        <i class="mr-3" [class]="snackbarData.iconName"></i>
+      }
+    </div>
+  </div>
+</section>

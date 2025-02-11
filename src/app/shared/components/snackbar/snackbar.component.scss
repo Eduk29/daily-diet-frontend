@@ -1,0 +1,63 @@
+@use './../../theme/default-theme/colors.theme.scss' as theme;
+
+.snackbar {
+  position: absolute;
+
+  &.snackbar-error {
+    .card{
+      background-color: theme.$color-error;
+      color: theme.$color-white;
+    }
+  }
+
+  &.snackbar-info {
+    .card{
+      background-color: theme.$color-secondary;
+      color: theme.$color-white;
+    }
+  }
+
+  &.snackbar-success {
+    .card{
+      background-color: theme.$color-success;
+      color: theme.$color-white;
+    }
+  }
+
+  &.hide {
+    display: none;
+  }
+
+  &.show {
+    display: block;
+  }
+
+  &.horizontal-start {
+    left: 2%;
+  }
+
+  &.horizontal-end {
+    right: 2%;
+  }
+
+  &.horizontal-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.vertical-top {
+    top: 2%;
+  }
+
+  &.vertical-bottom {
+    bottom: 2%;
+  }
+
+  .rounded-pill {
+    border-radius: 20px;
+  }
+
+  .shadow {
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 15%) !important;
+  }
+}
