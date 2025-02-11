@@ -1,4 +1,4 @@
-<button [class]="class" [type]="type" (click)="clickEvent()">
+<button [class]="class" [type]="type" (click)="dispatchClickEvent()" [class.disabled]="disabled">
   @if (iconName) {
     <i [class]="iconName + ' ' + iconColor + '-icon-color'"></i>
   }

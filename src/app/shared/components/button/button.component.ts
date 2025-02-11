@@ -1,4 +1,4 @@
-import { AfterViewChecked, Component, ElementRef, Injector, Input } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, EventEmitter, Injector, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,13 +8,15 @@ import { Router } from '@angular/router';
   styleUrl: './button.component.scss',
 })
 export class ButtonComponent implements AfterViewChecked {
-  @Input() public clickEventHandler!: () => void;
   @Input() public color: 'default' | 'success' | 'error' = 'default';
   @Input() public customClass!: string;
+  @Input() public disabled = false;
   @Input() public iconColor: 'default' | 'inverse' | 'success' | 'error' = 'default';
   @Input() public iconName!: string;
   @Input() public label!: string;
   @Input() public type!: 'button' | 'submit' | 'reset';
+
+  @Output() public clickEvent = new EventEmitter<void>();
 
   private router!: Router;
 
@@ -37,12 +39,12 @@ export class ButtonComponent implements AfterViewChecked {
   }
 
   public get class(): string {
-    return this.customClass ? `btn px-4 py-4 ${this.color} ${this.customClass}` : `btn px-4 py-4 ${this.color}`;
+    return this.customClass ? `btn ${this.color} ${this.customClass}` : `btn ${this.color}`;
   }
 
-  public clickEvent(): void {
-    if (this.clickEventHandler) {
-      this.clickEventHandler();
+  public dispatchClickEvent(): void {
+    if (!this.disabled) {
+      this.clickEvent.emit();
     }
   }
 

@@ -1,3 +1,4 @@
+@use "./../../theme/default-theme/colors.theme.scss" as theme;
 @use "./styles/button-stroked.styles";
 @use "./styles/button-basic.styles";
 @use "./styles/button-fab.styles";
@@ -8,4 +9,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  &.disabled {
+    cursor: default;
+    pointer-events: none;
+    background-color: theme.$color-grayscale-3;
+    color: theme.$color-grayscale-5;
+  }
 }
